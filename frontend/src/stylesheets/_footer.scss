@@ -1,0 +1,28 @@
+@use 'color';
+@use 'responsive';
+
+.footer-container {
+    background-color: black; /* Définit la couleur de fond en noir */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Ajustez les marges intérieures selon vos besoins */
+  }
+  
+  .left-text {
+    /* Ajoutez les styles nécessaires pour aligner le texte à gauche */
+    color: white; /* Couleur du texte à gauche */
+  }
+  
+  .right-text {
+    /* Ajoutez les styles nécessaires pour aligner le texte à droite */
+    color: white; /* Couleur du texte à droite */
+  }
+  
+  .centered-image {
+    display: block;
+    margin: 0 auto; /* Ajustez les marges selon vos besoins */
+  }

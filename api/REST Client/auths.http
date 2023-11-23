@@ -5,7 +5,7 @@ POST {{baseUrl}}/auths/login
 Content-Type: application/json
 
 {
-    "username":"unknown",
+    "email": "unknown",
     "password":"admin"
 }
 
@@ -14,7 +14,7 @@ POST {{baseUrl}}/auths/login
 Content-Type: application/json
 
 {
-    "username":"admin",
+    "email":"admin@example.com",
     "password":"admin"
 }
 
@@ -24,7 +24,9 @@ POST {{baseUrl}}/auths/register
 Content-Type: application/json
 
 {
-    "username":"manager",
+    "firstname": "manager",
+    "lastname": "manager",
+    "email":"manager@manager",
     "password":"manager"
 }
 
@@ -33,6 +35,9 @@ POST {{baseUrl}}/auths/login
 Content-Type: application/json
 
 {
-    "username":"manager",
+    "email":"manager@manager",
     "password":"manager"
 }
+
+### get all info on user
+GET {{baseUrl}}/users/1

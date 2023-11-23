@@ -2,9 +2,14 @@ const express = require('express');
 
 const router = express.Router();
 
-/* GET users listing. */
-router.get('/', (req, res) => {
-  res.json({ users: [{ name: 'e-baron' }] });
+const { getInfoByUserId } = require('../models/users');
+
+router.get('/:id', (req, res) => {
+  const foundUser = getInfoByUserId(req.params.id);
+
+  if (!foundUser) return res.sendStatus(404);
+
+  return res.json(foundUser);
 });
 
 module.exports = router;
